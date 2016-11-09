@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F32E15A11DC2EFAA00B3443A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F32E15A01DC2EFAA00B3443A /* SystemConfiguration.framework */; };
+		F384B2981DC3066700AF2A76 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F384B2951DC3062700AF2A76 /* IJKMediaFramework.framework */; };
+		F399B1241DC745D000A5D458 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399B1231DC745D000A5D458 /* Model.swift */; };
+		F399B1261DC7519400A5D458 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399B1251DC7519400A5D458 /* MessageCell.swift */; };
+		F3F87A5E1DC1AE5000FC5588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F87A5D1DC1AE5000FC5588 /* AppDelegate.swift */; };
+		F3F87A601DC1AE5000FC5588 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F87A5F1DC1AE5000FC5588 /* LiveViewController.swift */; };
+		F3F87A631DC1AE5000FC5588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F87A611DC1AE5000FC5588 /* Main.storyboard */; };
+		F3F87A651DC1AE5000FC5588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F87A641DC1AE5000FC5588 /* Assets.xcassets */; };
+		F3F87A681DC1AE5000FC5588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F87A661DC1AE5000FC5588 /* LaunchScreen.storyboard */; };
+		F3F87A731DC1AE5000FC5588 /* YunbaLiveDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F87A721DC1AE5000FC5588 /* YunbaLiveDemoTests.swift */; };
+		F3F87A871DC1AF1600FC5588 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A861DC1AF1600FC5588 /* VideoToolbox.framework */; };
+		F3F87A891DC1AF1F00FC5588 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A881DC1AF1F00FC5588 /* UIKit.framework */; };
+		F3F87A8B1DC1AF2600FC5588 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A8A1DC1AF2600FC5588 /* QuartzCore.framework */; };
+		F3F87A8D1DC1AF3100FC5588 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A8C1DC1AF3100FC5588 /* OpenGLES.framework */; };
+		F3F87A8F1DC1AF3F00FC5588 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A8E1DC1AF3F00FC5588 /* MobileCoreServices.framework */; };
+		F3F87A911DC1AF4B00FC5588 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A901DC1AF4B00FC5588 /* MediaPlayer.framework */; };
+		F3F87A931DC1AF6200FC5588 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A921DC1AF6200FC5588 /* libz.tbd */; };
+		F3F87A951DC1AF7300FC5588 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A941DC1AF7300FC5588 /* libbz2.tbd */; };
+		F3F87A971DC1AF7D00FC5588 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A961DC1AF7D00FC5588 /* CoreVideo.framework */; };
+		F3F87A991DC1AF8A00FC5588 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A981DC1AF8A00FC5588 /* CoreMedia.framework */; };
+		F3F87A9B1DC1AF9400FC5588 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A9A1DC1AF9400FC5588 /* CoreGraphics.framework */; };
+		F3F87A9D1DC1AFA000FC5588 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A9C1DC1AFA000FC5588 /* AVFoundation.framework */; };
+		F3F87A9F1DC1AFA900FC5588 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87A9E1DC1AFA900FC5588 /* AudioToolbox.framework */; };
+		F3F87AE31DC1ED4300FC5588 /* FxJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87AE01DC1ED4300FC5588 /* FxJSON.framework */; };
+		F3F87AE41DC1ED4300FC5588 /* FxJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87AE01DC1ED4300FC5588 /* FxJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3F87AE71DC1ED4300FC5588 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87AE21DC1ED4300FC5588 /* SnapKit.framework */; };
+		F3F87AE81DC1ED4300FC5588 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87AE21DC1ED4300FC5588 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3F87B0D1DC1ED5200FC5588 /* BarrageCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87AEC1DC1ED5200FC5588 /* BarrageCanvas.m */; };
+		F3F87B0E1DC1ED5200FC5588 /* BarrageClock.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87AEE1DC1ED5200FC5588 /* BarrageClock.m */; };
+		F3F87B0F1DC1ED5200FC5588 /* BarrageDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87AF01DC1ED5200FC5588 /* BarrageDescriptor.m */; };
+		F3F87B101DC1ED5200FC5588 /* BarrageDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87AF21DC1ED5200FC5588 /* BarrageDispatcher.m */; };
+		F3F87B111DC1ED5200FC5588 /* BarrageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87AF41DC1ED5200FC5588 /* BarrageRenderer.m */; };
+		F3F87B121DC1ED5200FC5588 /* BarrageSpriteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87AF61DC1ED5200FC5588 /* BarrageSpriteFactory.m */; };
+		F3F87B131DC1ED5200FC5588 /* BarrageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87AFA1DC1ED5200FC5588 /* BarrageLoader.m */; };
+		F3F87B141DC1ED5200FC5588 /* BarrageFloatImageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87AFD1DC1ED5200FC5588 /* BarrageFloatImageSprite.m */; };
+		F3F87B151DC1ED5200FC5588 /* BarrageFloatSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87AFF1DC1ED5200FC5588 /* BarrageFloatSprite.m */; };
+		F3F87B161DC1ED5200FC5588 /* BarrageFloatTextSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87B011DC1ED5200FC5588 /* BarrageFloatTextSprite.m */; };
+		F3F87B171DC1ED5200FC5588 /* BarrageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87B031DC1ED5200FC5588 /* BarrageSprite.m */; };
+		F3F87B181DC1ED5200FC5588 /* BarrageSpriteUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87B061DC1ED5200FC5588 /* BarrageSpriteUtility.m */; };
+		F3F87B191DC1ED5200FC5588 /* BarrageWalkImageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87B081DC1ED5200FC5588 /* BarrageWalkImageSprite.m */; };
+		F3F87B1A1DC1ED5200FC5588 /* BarrageWalkSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87B0A1DC1ED5200FC5588 /* BarrageWalkSprite.m */; };
+		F3F87B1B1DC1ED5200FC5588 /* BarrageWalkTextSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F87B0C1DC1ED5200FC5588 /* BarrageWalkTextSprite.m */; };
+		F3F87B211DC1F29F00FC5588 /* bridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F87B1E1DC1F29F00FC5588 /* bridging.swift */; };
+		F3F87B221DC1F29F00FC5588 /* libYunBa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F87B1F1DC1F29F00FC5588 /* libYunBa.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3F87A6F1DC1AE5000FC5588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3F87A521DC1AE5000FC5588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3F87A591DC1AE5000FC5588;
+			remoteInfo = YunbaLiveDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3F87ADF1DC1ED1100FC5588 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3F87AE81DC1ED4300FC5588 /* SnapKit.framework in Embed Frameworks */,
+				F3F87AE41DC1ED4300FC5588 /* FxJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F32E15A01DC2EFAA00B3443A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F384B2951DC3062700AF2A76 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = Frameworks/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		F399B1231DC745D000A5D458 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F399B1251DC7519400A5D458 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		F3F87A5A1DC1AE5000FC5588 /* YunbaLiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YunbaLiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F87A5D1DC1AE5000FC5588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3F87A5F1DC1AE5000FC5588 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		F3F87A621DC1AE5000FC5588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3F87A641DC1AE5000FC5588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3F87A671DC1AE5000FC5588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3F87A691DC1AE5000FC5588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F87A6E1DC1AE5000FC5588 /* YunbaLiveDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YunbaLiveDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F87A721DC1AE5000FC5588 /* YunbaLiveDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YunbaLiveDemoTests.swift; sourceTree = "<group>"; };
+		F3F87A741DC1AE5000FC5588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F87A861DC1AF1600FC5588 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		F3F87A881DC1AF1F00FC5588 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3F87A8A1DC1AF2600FC5588 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3F87A8C1DC1AF3100FC5588 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F3F87A8E1DC1AF3F00FC5588 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F3F87A901DC1AF4B00FC5588 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F3F87A921DC1AF6200FC5588 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F3F87A941DC1AF7300FC5588 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		F3F87A961DC1AF7D00FC5588 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F3F87A981DC1AF8A00FC5588 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F3F87A9A1DC1AF9400FC5588 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3F87A9C1DC1AFA000FC5588 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F3F87A9E1DC1AFA900FC5588 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F3F87AE01DC1ED4300FC5588 /* FxJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FxJSON.framework; path = Frameworks/FxJSON.framework; sourceTree = "<group>"; };
+		F3F87AE21DC1ED4300FC5588 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Frameworks/SnapKit.framework; sourceTree = "<group>"; };
+		F3F87AEB1DC1ED5200FC5588 /* BarrageCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageCanvas.h; sourceTree = "<group>"; };
+		F3F87AEC1DC1ED5200FC5588 /* BarrageCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageCanvas.m; sourceTree = "<group>"; };
+		F3F87AED1DC1ED5200FC5588 /* BarrageClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageClock.h; sourceTree = "<group>"; };
+		F3F87AEE1DC1ED5200FC5588 /* BarrageClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageClock.m; sourceTree = "<group>"; };
+		F3F87AEF1DC1ED5200FC5588 /* BarrageDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageDescriptor.h; sourceTree = "<group>"; };
+		F3F87AF01DC1ED5200FC5588 /* BarrageDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageDescriptor.m; sourceTree = "<group>"; };
+		F3F87AF11DC1ED5200FC5588 /* BarrageDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageDispatcher.h; sourceTree = "<group>"; };
+		F3F87AF21DC1ED5200FC5588 /* BarrageDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageDispatcher.m; sourceTree = "<group>"; };
+		F3F87AF31DC1ED5200FC5588 /* BarrageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageRenderer.h; sourceTree = "<group>"; };
+		F3F87AF41DC1ED5200FC5588 /* BarrageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageRenderer.m; sourceTree = "<group>"; };
+		F3F87AF51DC1ED5200FC5588 /* BarrageSpriteFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSpriteFactory.h; sourceTree = "<group>"; };
+		F3F87AF61DC1ED5200FC5588 /* BarrageSpriteFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageSpriteFactory.m; sourceTree = "<group>"; };
+		F3F87AF71DC1ED5200FC5588 /* BarrageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageHeader.h; sourceTree = "<group>"; };
+		F3F87AF91DC1ED5200FC5588 /* BarrageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageLoader.h; sourceTree = "<group>"; };
+		F3F87AFA1DC1ED5200FC5588 /* BarrageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageLoader.m; sourceTree = "<group>"; };
+		F3F87AFC1DC1ED5200FC5588 /* BarrageFloatImageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageFloatImageSprite.h; sourceTree = "<group>"; };
+		F3F87AFD1DC1ED5200FC5588 /* BarrageFloatImageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageFloatImageSprite.m; sourceTree = "<group>"; };
+		F3F87AFE1DC1ED5200FC5588 /* BarrageFloatSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageFloatSprite.h; sourceTree = "<group>"; };
+		F3F87AFF1DC1ED5200FC5588 /* BarrageFloatSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageFloatSprite.m; sourceTree = "<group>"; };
+		F3F87B001DC1ED5200FC5588 /* BarrageFloatTextSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageFloatTextSprite.h; sourceTree = "<group>"; };
+		F3F87B011DC1ED5200FC5588 /* BarrageFloatTextSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageFloatTextSprite.m; sourceTree = "<group>"; };
+		F3F87B021DC1ED5200FC5588 /* BarrageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSprite.h; sourceTree = "<group>"; };
+		F3F87B031DC1ED5200FC5588 /* BarrageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageSprite.m; sourceTree = "<group>"; };
+		F3F87B041DC1ED5200FC5588 /* BarrageSpriteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSpriteProtocol.h; sourceTree = "<group>"; };
+		F3F87B051DC1ED5200FC5588 /* BarrageSpriteUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSpriteUtility.h; sourceTree = "<group>"; };
+		F3F87B061DC1ED5200FC5588 /* BarrageSpriteUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageSpriteUtility.m; sourceTree = "<group>"; };
+		F3F87B071DC1ED5200FC5588 /* BarrageWalkImageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageWalkImageSprite.h; sourceTree = "<group>"; };
+		F3F87B081DC1ED5200FC5588 /* BarrageWalkImageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageWalkImageSprite.m; sourceTree = "<group>"; };
+		F3F87B091DC1ED5200FC5588 /* BarrageWalkSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageWalkSprite.h; sourceTree = "<group>"; };
+		F3F87B0A1DC1ED5200FC5588 /* BarrageWalkSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageWalkSprite.m; sourceTree = "<group>"; };
+		F3F87B0B1DC1ED5200FC5588 /* BarrageWalkTextSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageWalkTextSprite.h; sourceTree = "<group>"; };
+		F3F87B0C1DC1ED5200FC5588 /* BarrageWalkTextSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageWalkTextSprite.m; sourceTree = "<group>"; };
+		F3F87B1D1DC1F29F00FC5588 /* bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
+		F3F87B1E1DC1F29F00FC5588 /* bridging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bridging.swift; sourceTree = "<group>"; };
+		F3F87B1F1DC1F29F00FC5588 /* libYunBa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYunBa.a; sourceTree = "<group>"; };
+		F3F87B201DC1F29F00FC5588 /* YunBaService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunBaService.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3F87A571DC1AE5000FC5588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F384B2981DC3066700AF2A76 /* IJKMediaFramework.framework in Frameworks */,
+				F3F87A9F1DC1AFA900FC5588 /* AudioToolbox.framework in Frameworks */,
+				F3F87A9D1DC1AFA000FC5588 /* AVFoundation.framework in Frameworks */,
+				F3F87A9B1DC1AF9400FC5588 /* CoreGraphics.framework in Frameworks */,
+				F3F87A991DC1AF8A00FC5588 /* CoreMedia.framework in Frameworks */,
+				F3F87A971DC1AF7D00FC5588 /* CoreVideo.framework in Frameworks */,
+				F3F87A951DC1AF7300FC5588 /* libbz2.tbd in Frameworks */,
+				F3F87A931DC1AF6200FC5588 /* libz.tbd in Frameworks */,
+				F3F87A911DC1AF4B00FC5588 /* MediaPlayer.framework in Frameworks */,
+				F3F87A8F1DC1AF3F00FC5588 /* MobileCoreServices.framework in Frameworks */,
+				F3F87A8D1DC1AF3100FC5588 /* OpenGLES.framework in Frameworks */,
+				F3F87A8B1DC1AF2600FC5588 /* QuartzCore.framework in Frameworks */,
+				F3F87A891DC1AF1F00FC5588 /* UIKit.framework in Frameworks */,
+				F3F87A871DC1AF1600FC5588 /* VideoToolbox.framework in Frameworks */,
+				F3F87AE71DC1ED4300FC5588 /* SnapKit.framework in Frameworks */,
+				F3F87AE31DC1ED4300FC5588 /* FxJSON.framework in Frameworks */,
+				F32E15A11DC2EFAA00B3443A /* SystemConfiguration.framework in Frameworks */,
+				F3F87B221DC1F29F00FC5588 /* libYunBa.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F87A6B1DC1AE5000FC5588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3F87A511DC1AE5000FC5588 = {
+			isa = PBXGroup;
+			children = (
+				F3F87B1C1DC1F29F00FC5588 /* YunBaSDK */,
+				F3F87A5C1DC1AE5000FC5588 /* YunbaLiveDemo */,
+				F3F87A711DC1AE5000FC5588 /* YunbaLiveDemoTests */,
+				F3F87A5B1DC1AE5000FC5588 /* Products */,
+				F3F87A7D1DC1AED700FC5588 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3F87A5B1DC1AE5000FC5588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3F87A5A1DC1AE5000FC5588 /* YunbaLiveDemo.app */,
+				F3F87A6E1DC1AE5000FC5588 /* YunbaLiveDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3F87A5C1DC1AE5000FC5588 /* YunbaLiveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F3F87A5D1DC1AE5000FC5588 /* AppDelegate.swift */,
+				F3F87A5F1DC1AE5000FC5588 /* LiveViewController.swift */,
+				F399B1231DC745D000A5D458 /* Model.swift */,
+				F399B1251DC7519400A5D458 /* MessageCell.swift */,
+				F3F87A611DC1AE5000FC5588 /* Main.storyboard */,
+				F3F87A641DC1AE5000FC5588 /* Assets.xcassets */,
+				F3F87A661DC1AE5000FC5588 /* LaunchScreen.storyboard */,
+				F3F87A691DC1AE5000FC5588 /* Info.plist */,
+			);
+			path = YunbaLiveDemo;
+			sourceTree = "<group>";
+		};
+		F3F87A711DC1AE5000FC5588 /* YunbaLiveDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3F87A721DC1AE5000FC5588 /* YunbaLiveDemoTests.swift */,
+				F3F87A741DC1AE5000FC5588 /* Info.plist */,
+			);
+			path = YunbaLiveDemoTests;
+			sourceTree = "<group>";
+		};
+		F3F87A7D1DC1AED700FC5588 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3F87AE91DC1ED5200FC5588 /* BarrageRenderer */,
+				F384B2951DC3062700AF2A76 /* IJKMediaFramework.framework */,
+				F32E15A01DC2EFAA00B3443A /* SystemConfiguration.framework */,
+				F3F87AE01DC1ED4300FC5588 /* FxJSON.framework */,
+				F3F87AE21DC1ED4300FC5588 /* SnapKit.framework */,
+				F3F87A9E1DC1AFA900FC5588 /* AudioToolbox.framework */,
+				F3F87A9C1DC1AFA000FC5588 /* AVFoundation.framework */,
+				F3F87A9A1DC1AF9400FC5588 /* CoreGraphics.framework */,
+				F3F87A981DC1AF8A00FC5588 /* CoreMedia.framework */,
+				F3F87A961DC1AF7D00FC5588 /* CoreVideo.framework */,
+				F3F87A941DC1AF7300FC5588 /* libbz2.tbd */,
+				F3F87A921DC1AF6200FC5588 /* libz.tbd */,
+				F3F87A901DC1AF4B00FC5588 /* MediaPlayer.framework */,
+				F3F87A8E1DC1AF3F00FC5588 /* MobileCoreServices.framework */,
+				F3F87A8C1DC1AF3100FC5588 /* OpenGLES.framework */,
+				F3F87A8A1DC1AF2600FC5588 /* QuartzCore.framework */,
+				F3F87A881DC1AF1F00FC5588 /* UIKit.framework */,
+				F3F87A861DC1AF1600FC5588 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3F87AE91DC1ED5200FC5588 /* BarrageRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				F3F87AEA1DC1ED5200FC5588 /* BarrageEngine */,
+				F3F87AF71DC1ED5200FC5588 /* BarrageHeader.h */,
+				F3F87AF81DC1ED5200FC5588 /* BarrageLoader */,
+				F3F87AFB1DC1ED5200FC5588 /* BarrageSprite */,
+			);
+			name = BarrageRenderer;
+			path = Frameworks/BarrageRenderer;
+			sourceTree = "<group>";
+		};
+		F3F87AEA1DC1ED5200FC5588 /* BarrageEngine */ = {
+			isa = PBXGroup;
+			children = (
+				F3F87AEB1DC1ED5200FC5588 /* BarrageCanvas.h */,
+				F3F87AEC1DC1ED5200FC5588 /* BarrageCanvas.m */,
+				F3F87AED1DC1ED5200FC5588 /* BarrageClock.h */,
+				F3F87AEE1DC1ED5200FC5588 /* BarrageClock.m */,
+				F3F87AEF1DC1ED5200FC5588 /* BarrageDescriptor.h */,
+				F3F87AF01DC1ED5200FC5588 /* BarrageDescriptor.m */,
+				F3F87AF11DC1ED5200FC5588 /* BarrageDispatcher.h */,
+				F3F87AF21DC1ED5200FC5588 /* BarrageDispatcher.m */,
+				F3F87AF31DC1ED5200FC5588 /* BarrageRenderer.h */,
+				F3F87AF41DC1ED5200FC5588 /* BarrageRenderer.m */,
+				F3F87AF51DC1ED5200FC5588 /* BarrageSpriteFactory.h */,
+				F3F87AF61DC1ED5200FC5588 /* BarrageSpriteFactory.m */,
+			);
+			path = BarrageEngine;
+			sourceTree = "<group>";
+		};
+		F3F87AF81DC1ED5200FC5588 /* BarrageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				F3F87AF91DC1ED5200FC5588 /* BarrageLoader.h */,
+				F3F87AFA1DC1ED5200FC5588 /* BarrageLoader.m */,
+			);
+			path = BarrageLoader;
+			sourceTree = "<group>";
+		};
+		F3F87AFB1DC1ED5200FC5588 /* BarrageSprite */ = {
+			isa = PBXGroup;
+			children = (
+				F3F87AFC1DC1ED5200FC5588 /* BarrageFloatImageSprite.h */,
+				F3F87AFD1DC1ED5200FC5588 /* BarrageFloatImageSprite.m */,
+				F3F87AFE1DC1ED5200FC5588 /* BarrageFloatSprite.h */,
+				F3F87AFF1DC1ED5200FC5588 /* BarrageFloatSprite.m */,
+				F3F87B001DC1ED5200FC5588 /* BarrageFloatTextSprite.h */,
+				F3F87B011DC1ED5200FC5588 /* BarrageFloatTextSprite.m */,
+				F3F87B021DC1ED5200FC5588 /* BarrageSprite.h */,
+				F3F87B031DC1ED5200FC5588 /* BarrageSprite.m */,
+				F3F87B041DC1ED5200FC5588 /* BarrageSpriteProtocol.h */,
+				F3F87B051DC1ED5200FC5588 /* BarrageSpriteUtility.h */,
+				F3F87B061DC1ED5200FC5588 /* BarrageSpriteUtility.m */,
+				F3F87B071DC1ED5200FC5588 /* BarrageWalkImageSprite.h */,
+				F3F87B081DC1ED5200FC5588 /* BarrageWalkImageSprite.m */,
+				F3F87B091DC1ED5200FC5588 /* BarrageWalkSprite.h */,
+				F3F87B0A1DC1ED5200FC5588 /* BarrageWalkSprite.m */,
+				F3F87B0B1DC1ED5200FC5588 /* BarrageWalkTextSprite.h */,
+				F3F87B0C1DC1ED5200FC5588 /* BarrageWalkTextSprite.m */,
+			);
+			path = BarrageSprite;
+			sourceTree = "<group>";
+		};
+		F3F87B1C1DC1F29F00FC5588 /* YunBaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F3F87B1F1DC1F29F00FC5588 /* libYunBa.a */,
+				F3F87B201DC1F29F00FC5588 /* YunBaService.h */,
+				F3F87B1D1DC1F29F00FC5588 /* bridging.h */,
+				F3F87B1E1DC1F29F00FC5588 /* bridging.swift */,
+			);
+			path = YunBaSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3F87A591DC1AE5000FC5588 /* YunbaLiveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F87A771DC1AE5000FC5588 /* Build configuration list for PBXNativeTarget "YunbaLiveDemo" */;
+			buildPhases = (
+				F3F87A561DC1AE5000FC5588 /* Sources */,
+				F3F87A571DC1AE5000FC5588 /* Frameworks */,
+				F3F87A581DC1AE5000FC5588 /* Resources */,
+				F3F87ADF1DC1ED1100FC5588 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YunbaLiveDemo;
+			productName = YunbaLiveDemo;
+			productReference = F3F87A5A1DC1AE5000FC5588 /* YunbaLiveDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3F87A6D1DC1AE5000FC5588 /* YunbaLiveDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F87A7A1DC1AE5000FC5588 /* Build configuration list for PBXNativeTarget "YunbaLiveDemoTests" */;
+			buildPhases = (
+				F3F87A6A1DC1AE5000FC5588 /* Sources */,
+				F3F87A6B1DC1AE5000FC5588 /* Frameworks */,
+				F3F87A6C1DC1AE5000FC5588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3F87A701DC1AE5000FC5588 /* PBXTargetDependency */,
+			);
+			name = YunbaLiveDemoTests;
+			productName = YunbaLiveDemoTests;
+			productReference = F3F87A6E1DC1AE5000FC5588 /* YunbaLiveDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3F87A521DC1AE5000FC5588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = com.yunba;
+				TargetAttributes = {
+					F3F87A591DC1AE5000FC5588 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3DT7AA598T;
+						ProvisioningStyle = Automatic;
+					};
+					F3F87A6D1DC1AE5000FC5588 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3F87A591DC1AE5000FC5588;
+					};
+				};
+			};
+			buildConfigurationList = F3F87A551DC1AE5000FC5588 /* Build configuration list for PBXProject "YunbaLiveDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3F87A511DC1AE5000FC5588;
+			productRefGroup = F3F87A5B1DC1AE5000FC5588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3F87A591DC1AE5000FC5588 /* YunbaLiveDemo */,
+				F3F87A6D1DC1AE5000FC5588 /* YunbaLiveDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3F87A581DC1AE5000FC5588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F87A681DC1AE5000FC5588 /* LaunchScreen.storyboard in Resources */,
+				F3F87A651DC1AE5000FC5588 /* Assets.xcassets in Resources */,
+				F3F87A631DC1AE5000FC5588 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F87A6C1DC1AE5000FC5588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3F87A561DC1AE5000FC5588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F87A601DC1AE5000FC5588 /* LiveViewController.swift in Sources */,
+				F399B1261DC7519400A5D458 /* MessageCell.swift in Sources */,
+				F3F87B101DC1ED5200FC5588 /* BarrageDispatcher.m in Sources */,
+				F3F87B0E1DC1ED5200FC5588 /* BarrageClock.m in Sources */,
+				F3F87B131DC1ED5200FC5588 /* BarrageLoader.m in Sources */,
+				F3F87B171DC1ED5200FC5588 /* BarrageSprite.m in Sources */,
+				F3F87A5E1DC1AE5000FC5588 /* AppDelegate.swift in Sources */,
+				F3F87B121DC1ED5200FC5588 /* BarrageSpriteFactory.m in Sources */,
+				F3F87B0D1DC1ED5200FC5588 /* BarrageCanvas.m in Sources */,
+				F3F87B1A1DC1ED5200FC5588 /* BarrageWalkSprite.m in Sources */,
+				F3F87B111DC1ED5200FC5588 /* BarrageRenderer.m in Sources */,
+				F3F87B151DC1ED5200FC5588 /* BarrageFloatSprite.m in Sources */,
+				F3F87B211DC1F29F00FC5588 /* bridging.swift in Sources */,
+				F3F87B181DC1ED5200FC5588 /* BarrageSpriteUtility.m in Sources */,
+				F3F87B191DC1ED5200FC5588 /* BarrageWalkImageSprite.m in Sources */,
+				F3F87B161DC1ED5200FC5588 /* BarrageFloatTextSprite.m in Sources */,
+				F3F87B141DC1ED5200FC5588 /* BarrageFloatImageSprite.m in Sources */,
+				F399B1241DC745D000A5D458 /* Model.swift in Sources */,
+				F3F87B1B1DC1ED5200FC5588 /* BarrageWalkTextSprite.m in Sources */,
+				F3F87B0F1DC1ED5200FC5588 /* BarrageDescriptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F87A6A1DC1AE5000FC5588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F87A731DC1AE5000FC5588 /* YunbaLiveDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3F87A701DC1AE5000FC5588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3F87A591DC1AE5000FC5588 /* YunbaLiveDemo */;
+			targetProxy = F3F87A6F1DC1AE5000FC5588 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3F87A611DC1AE5000FC5588 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F87A621DC1AE5000FC5588 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3F87A661DC1AE5000FC5588 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F87A671DC1AE5000FC5588 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F384B2901DC3039F00AF2A76 /* ad hoc distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "ad hoc distribution";
+		};
+		F384B2911DC3039F00AF2A76 /* ad hoc distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3DT7AA598T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = YunbaLiveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YunBaSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunba.YunbaLiveDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/YunBaSDK/bridging.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "ad hoc distribution";
+		};
+		F384B2921DC3039F00AF2A76 /* ad hoc distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YunbaLiveDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunba.YunbaLiveDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YunbaLiveDemo.app/YunbaLiveDemo";
+			};
+			name = "ad hoc distribution";
+		};
+		F3F87A751DC1AE5000FC5588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3F87A761DC1AE5000FC5588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3F87A781DC1AE5000FC5588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3DT7AA598T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = YunbaLiveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YunBaSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunba.YunbaLiveDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/YunBaSDK/bridging.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3F87A791DC1AE5000FC5588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3DT7AA598T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = YunbaLiveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YunBaSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunba.YunbaLiveDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/YunBaSDK/bridging.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F3F87A7B1DC1AE5000FC5588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YunbaLiveDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunba.YunbaLiveDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YunbaLiveDemo.app/YunbaLiveDemo";
+			};
+			name = Debug;
+		};
+		F3F87A7C1DC1AE5000FC5588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YunbaLiveDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunba.YunbaLiveDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YunbaLiveDemo.app/YunbaLiveDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3F87A551DC1AE5000FC5588 /* Build configuration list for PBXProject "YunbaLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F87A751DC1AE5000FC5588 /* Debug */,
+				F3F87A761DC1AE5000FC5588 /* Release */,
+				F384B2901DC3039F00AF2A76 /* ad hoc distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F87A771DC1AE5000FC5588 /* Build configuration list for PBXNativeTarget "YunbaLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F87A781DC1AE5000FC5588 /* Debug */,
+				F3F87A791DC1AE5000FC5588 /* Release */,
+				F384B2911DC3039F00AF2A76 /* ad hoc distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F87A7A1DC1AE5000FC5588 /* Build configuration list for PBXNativeTarget "YunbaLiveDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F87A7B1DC1AE5000FC5588 /* Debug */,
+				F3F87A7C1DC1AE5000FC5588 /* Release */,
+				F384B2921DC3039F00AF2A76 /* ad hoc distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3F87A521DC1AE5000FC5588 /* Project object */;
+}

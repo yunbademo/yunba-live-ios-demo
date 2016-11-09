@@ -1,0 +1,10 @@
+framework module FxJSON {
+  umbrella header "FxJSON.h"
+
+  export *
+  module * { export * }
+}
+
+module FxJSON.Swift {
+    header "FxJSON-Swift.h"
+}
